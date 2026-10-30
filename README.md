@@ -2,7 +2,7 @@
 
 The Laravel SDK for MyBeast Auth (`services.my-beast.com/auth`): your app's people sign in on Auth's hosted pages
 (password, e-mail code, passkey, Google/Microsoft/Apple, two-factor); your app gets who they are and keeps its own
-users table and its own session. PHP ≥ 8.2, Laravel 11-13.
+users table and its own session. PHP ≥ 8.2, Laravel 12 and 13.
 
 ## Set up
 
@@ -69,3 +69,9 @@ MyBeastAuth::fake()->actingAs($user, ['auth_time' => now()->subHour()->timestamp
 ```bash
 composer install && ./vendor/bin/phpunit && ./vendor/bin/pint
 ```
+
+## Releasing
+
+Add the version to `CHANGELOG.md`, then tag it: `git tag v0.2.0 && git push --tags`. Packagist reads the tag through
+its GitHub hook; there is no version in `composer.json`. The Tests workflow runs on the tag as on every push: PHP 8.2
+to 8.4 against Laravel 12 and 13 (Laravel 11 has unfixed advisories, so Composer will not install it).
