@@ -1,6 +1,6 @@
 # mybeast/auth-laravel
 
-The Laravel SDK for MyBeast Auth (`services.my-beast.com/auth`): your app's people sign in on Auth's hosted pages
+The Laravel SDK for My Beast Auth (`services.my-beast.com/auth`): your app's people sign in on Auth's hosted pages
 (password, e-mail code, passkey, Google/Microsoft/Apple, two-factor); your app gets who they are and keeps its own
 users table and its own session. PHP ≥ 8.2, Laravel 12 and 13.
 

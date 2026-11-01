@@ -16,7 +16,7 @@ use MyBeast\Auth\Laravel\Oidc\Provider;
 use MyBeast\Auth\Laravel\Users\UsersClient;
 
 /**
- * Signing this app's people in with MyBeast Auth. The app says once who a signed-in person is here
+ * Signing this app's people in with My Beast Auth. The app says once who a signed-in person is here
  * (resolveUsersWith: find or make your user from the Identity); then GET mybeast-auth.redirect starts a sign-in and
  * the callback ends it - the code for tokens, the ID token checked, your user signed in to the guard, a new session
  * id. The session keeps the Identity (when and how they signed in) for `mybeast-auth.fresh`.

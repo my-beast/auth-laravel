@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * MyBeast Auth: your app's people sign in on Auth's hosted pages; this app gets who they are (an ID token, checked
+ * My Beast Auth: your app's people sign in on Auth's hosted pages; this app gets who they are (an ID token, checked
  * here) and keeps its own users table and its own session. The issuer, the client id and the secret come from the
  * environment's Apps page there (the secret is shown once). Register this app's callback there:
  * {APP_URL}/mybeast-auth/callback (the prefix below).

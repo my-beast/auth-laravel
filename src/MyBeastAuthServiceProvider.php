@@ -14,7 +14,7 @@ use MyBeast\Auth\Laravel\Users\UsersClient;
 use RuntimeException;
 
 /**
- * Plugs MyBeast Auth in: MyBeastAuth (resolveUsersWith, identity, users), its three routes, and the
+ * Plugs My Beast Auth in: MyBeastAuth (resolveUsersWith, identity, users), its three routes, and the
  * `mybeast-auth.fresh:{minutes}` middleware. Nothing is fetched at boot: the provider is read on the first sign-in.
  */
 final class MyBeastAuthServiceProvider extends ServiceProvider
